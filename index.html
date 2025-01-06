@@ -2,197 +2,390 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ChatGPT 中文版：2025国内镜像站推荐，无需翻墙，支持 GPT-4，详细教程助您快速上手 AI 对话助手。">
-    <meta name="keywords" content="ChatGPT中文版, GPT-4中文版, ChatGPT国内镜像站, 中文GPT, AI助手">
-    <meta name="author" content="lory">
-    <meta property="og:title" content="ChatGPT 中文版：2025免费指南（国内镜像站推荐，支持 GPT-4）">
-    <meta property="og:description" content="全面解析 ChatGPT 中文版，国内最新镜像站推荐，无需翻墙支持 GPT-4，满足学习与办公需求，快速体验 AI 对话助手。">
-    <meta property="og:url" content="https://github.com/lory-b/ChatGPT/">
+    <meta http-equiv='content-language' content='zh-CN'>
+    <title>ChatGPT 中文版使用指南 | 最新2025年无障碍访问（支持GPT-4等多版本）</title>
+    <meta name="description" content="全面解析ChatGPT中文版的使用方法，无需翻墙即可访问。支持GPT-4、GPT-4o和o1-preview，适用于个人和专业应用。提供国内最新镜像站点推荐和详细使用教程。">
+    <meta name="keywords" content="ChatGPT中文版, ChatGPT使用指南, ChatGPT国内访问, GPT-4中文, 无需翻墙, ChatGPT镜像站, 人工智能聊天, ChatGPT教程">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ChatGPT 中文版使用指南 | 最新2025年无障碍访问（支持GPT-4等多版本）">
+    <meta property="og:description" content="全面解析ChatGPT中文版的使用方法，无需翻墙即可访问。支持GPT-4、GPT-4o和o1-preview，适用于个人和专业应用。提供国内最新镜像站点推荐和详细使用教程。">
+    <meta property="og:url" content="https://github.com/lory-b/ChatGPT">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://github.com/lory-b/ChatGPT/images/chatgpt-guide-thumbnail.jpg">
-    <title>ChatGPT 中文版：2025免费指南（国内镜像站推荐，支持 GPT-4）</title>
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="ChatGPT 中文版使用指南 | 最新2025年无障碍访问（支持GPT-4等多版本）">
+    <meta name="twitter:description" content="全面解析ChatGPT中文版的使用方法，无需翻墙即可访问。支持GPT-4、GPT-4o和o1-preview，适用于个人和专业应用。提供国内最新镜像站点推荐和详细使用教程。">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Verification and Favicon -->
+    <meta name="msvalidate.01" content="13FA48707DFB7A4DA2641B1733A668E8" />
+    <link rel="icon" href="/openai.png" type="image/x-icon">
+    
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Styles -->
     <style>
+        :root {
+            --primary-color: #00A2E8;
+            --secondary-color: #4FE2B1;
+            --text-color: #ffffff;
+            --background-color: #1a1a1a;
+            --button-color: #007bff;
+            --button-hover-color: #0056b3;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: var(--font-family);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background: #f9f9f9;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            overflow-x: hidden;
         }
-        header {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
             text-align: center;
-            background: linear-gradient(135deg, #6e45e2, #88d3ce);
-            color: white;
-            padding: 50px 20px;
         }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            z-index: -1;
+            opacity: 0.8;
         }
-        header p {
-            margin: 10px 0 20px;
-            font-size: 1.2rem;
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        header .button {
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .button {
             display: inline-block;
             padding: 15px 30px;
-            color: white;
-            background-color: #007bff;
-            border-radius: 50px;
+            background-color: var(--button-color);
+            color: var(--text-color);
             text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        header .button:hover {
+
+        .button:hover {
+            background-color: var(--button-hover-color);
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
         }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
+
+        .arrow-down {
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            color: var(--button-color);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Markdown Content Styles */
+        .markdown-content {
+            padding: 40px;
+            background-color: #2a2a2a;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            max-width: 900px;
+            color: #e0e0e0;
         }
-        h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-            font-size: 2rem;
+
+        .markdown-content h2 {
+            font-size: 32px;
+            margin-top: 30px;
+            color: var(--primary-color);
         }
-        table {
+
+        .markdown-content p, 
+        .markdown-content li {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .markdown-content ul, 
+        .markdown-content ol {
+            padding-left: 20px;
+        }
+
+        .markdown-content table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            background: #f7f9fc;
+            margin-top: 20px;
         }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 10px;
+
+        .markdown-content th, 
+        .markdown-content td {
+            border: 1px solid #444;
+            padding: 12px;
             text-align: left;
         }
-        table th {
-            background: #007bff;
-            color: white;
+
+        .markdown-content th {
+            background-color: #333;
+            color: #fff;
         }
-        ul {
-            list-style: disc;
-            margin-left: 20px;
+
+        .markdown-content a {
+            color: var(--button-color);
+            text-decoration: none;
         }
-        footer {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+
+            .markdown-content {
+                padding: 20px;
+                margin: 20px auto;
+            }
+
+            .markdown-content h2 {
+                font-size: 24px;
+            }
+
+            .markdown-content p, 
+            .markdown-content li {
+                font-size: 16px;
+            }
+
+            .markdown-content table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .arrow-down {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>ChatGPT 中文版：2025免费指南</h1>
-        <p>支持 GPT-4，无需翻墙，推荐国内最新镜像站，助您快速上手 AI 助手。</p>
-        <a href="https://gptcat.net" class="button">开始对话</a>
-    </header>
+    <div class="background"></div>
+    <div class="container">
+        <h1>ChatGPT 中文版</h1>
+        <h2>2025年最新发布，无需翻墙即可畅享GPT-4等多版本智能对话</h2>
+        <a href="https://gptcat.net/" target="_self" class="button">立即开始对话</a>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️ 探索更多镜像站点</div>
+    </div>
 
-    <main class="container">
-        <section id="intro">
-            <h2>什么是 ChatGPT 中文版？</h2>
-            <p>ChatGPT 中文版是 OpenAI GPT 模型的本地化版本，针对国内用户优化，为中文对话提供流畅体验。</p>
-            <ul>
-                <li>无需翻墙即可访问，使用便捷。</li>
-                <li>支持最新 GPT-4 模型，功能更强大。</li>
-                <li>适用于学习、办公、创意等多种场景。</li>
-            </ul>
-        </section>
+    <!-- 第二屏内容 -->
+    <section class="markdown-content" id="more-content">
+        <h2 id="why-choose">一、为什么选择 ChatGPT 中文版？</h2>
+        <p><strong>ChatGPT 中文版</strong>是由OpenAI开发的ChatGPT模型的本地化版本，专为中文用户优化，提供流畅且精准的对话体验。</p>
+        <p>相比官方版本，中文版更贴合国内用户的需求：</p>
+        <ul>
+            <li><strong>卓越的中文支持</strong>：适用于学习、办公及日常交流，提供自然流畅的中文互动。</li>
+            <li><strong>无需翻墙访问</strong>：通过国内镜像网站即可快速稳定地访问。</li>
+            <li><strong>多功能支持</strong>：支持GPT-4、GPT-4o和o1-preview，涵盖翻译、写作、问答等多种应用场景。</li>
+        </ul>
 
-        <section id="features">
-            <h2>ChatGPT 中文版的功能亮点</h2>
-            <ul>
-                <li>自然语言对话：支持复杂多轮对话，智能理解上下文。</li>
-                <li>代码生成与优化：助力开发者快速生成代码并提供优化建议。</li>
-                <li>AI 文案创作：快速生成高质量的文章、文案或社交媒体内容。</li>
-                <li>多语言翻译：支持即时翻译多种语言，适合国际交流。</li>
-                <li>AI 绘图（部分站点支持）：生成高质量图像，满足创意需求。</li>
-            </ul>
-        </section>
+        <h2 id="recommended-sites">二、推荐的国内 ChatGPT 镜像网站</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>镜像站名称</th>
+                    <th>地址</th>
+                    <th>支持版本</th>
+                    <th>免费额度</th>
+                    <th>注册方式</th>
+                    <th>稳定性</th>
+                    <th>功能亮点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>蛇语 AI</td>
+                    <td><a href="https://snakegpt.work" target="_blank">snakegpt.work</a></td>
+                    <td>GPT-4, GPT-3.5</td>
+                    <td>有</td>
+                    <td>国内QQ邮箱、网易邮箱等注册</td>
+                    <td>高</td>
+                    <td>中文支持，支持GPT-4o和MJ绘图，论文与翻译助手</td>
+                </tr>
+                <tr>
+                    <td>GPT 猫中文站</td>
+                    <td><a href="https://gptcat.net" target="_blank">gptcat.net</a></td>
+                    <td>GPT-4, GPT-o1, Canvas</td>
+                    <td>有</td>
+                    <td>国内QQ邮箱、网易邮箱等注册</td>
+                    <td>高</td>
+                    <td>中文界面，完美还原官网，支持o1, Canvas, GPT-4o等模型</td>
+                </tr>
+                <tr>
+                    <td>熊猫 GPT</td>
+                    <td><a href="https://ai-panda.xyz" target="_blank">ai-panda.xyz</a></td>
+                    <td>GPT-4, GPT-3.5</td>
+                    <td>有</td>
+                    <td>邮箱注册</td>
+                    <td>高</td>
+                    <td>稳定快速，支持API调用</td>
+                </tr>
+                <tr>
+                    <td>狗狗 GPT</td>
+                    <td><a href="https://gptdog.online" target="_blank">gptdog.online</a></td>
+                    <td>GPT-3.5</td>
+                    <td>有</td>
+                    <td>无需注册</td>
+                    <td>中</td>
+                    <td>免费无限制，新手友好</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <section id="mirror-sites">
-            <h2>推荐的 ChatGPT 中文版镜像站</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>名称</th>
-                        <th>地址</th>
-                        <th>支持模型</th>
-                        <th>功能亮点</th>
-                        <th>免费额度</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>蛇语 AI</td>
-                        <td><a href="https://snakegpt.work">snakegpt.work</a></td>
-                        <td>GPT-4</td>
-                        <td>支持 AI 绘图</td>
-                        <td>5次对话</td>
-                    </tr>
-                    <tr>
-                        <td>GPT 猫</td>
-                        <td><a href="https://gptcat.net">gptcat.net</a></td>
-                        <td>GPT-4</td>
-                        <td>中文界面，无广告</td>
-                        <td>10次对话</td>
-                    </tr>
-                    <tr>
-                        <td>熊猫 GPT</td>
-                        <td><a href="https://ai-panda.xyz">ai-panda.xyz</a></td>
-                        <td>GPT-4</td>
-                        <td>快速响应，API 支持</td>
-                        <td>10次对话</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h2 id="differences">三、ChatGPT 官网与中文版的区别</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>对比项</th>
+                    <th>ChatGPT 官网</th>
+                    <th>ChatGPT 中文版（镜像网站）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>访问方式</td>
+                    <td>需翻墙，速度可能受限</td>
+                    <td>无需翻墙，快速稳定访问</td>
+                </tr>
+                <tr>
+                    <td>语言支持</td>
+                    <td>多语言（中文优化较少）</td>
+                    <td>重点优化中文，响应更准确</td>
+                </tr>
+                <tr>
+                    <td>功能支持</td>
+                    <td>支持GPT-4、GPT-3.5</td>
+                    <td>支持GPT-4，部分站点提供更多功能</td>
+                </tr>
+                <tr>
+                    <td>免费使用</td>
+                    <td>试用额度有限，需购买套餐</td>
+                    <td>部分站点提供免费试用</td>
+                </tr>
+                <tr>
+                    <td>注册流程</td>
+                    <td>需要海外手机号</td>
+                    <td>支持国内邮箱或手机号注册</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <section id="usage-guide">
-            <h2>如何使用 ChatGPT 中文版？</h2>
-            <ol>
-                <li>访问镜像站：选择一个推荐的站点（如 <a href="https://gptcat.net">GPT 猫</a>）。</li>
-                <li>登录或直接使用：部分站点无需注册即可体验。</li>
-                <li>输入问题：在对话框中输入您的需求或问题。</li>
-                <li>获取回答：等待 ChatGPT 返回详细、智能的回答。</li>
-            </ol>
-        </section>
+        <h2 id="quick-start">四、ChatGPT 中文版的使用方法</h2>
+        <ol>
+            <li><strong>选择镜像站点</strong>：访问推荐的镜像站点，例如 <a href="https://gptcat.net/" target="_blank">gptcat.net</a>。</li>
+            <li><strong>注册或直接使用</strong>：
+                <ul>
+                    <li><strong>扫码登录</strong>：使用微信扫码即可登录。</li>
+                    <li><strong>免注册</strong>：无需注册，直接进入聊天界面，开始对话。</li>
+                </ul>
+            </li>
+            <li><strong>选择GPT模型</strong>：根据需求选择适合的GPT-4模型，如GPT-4o或o1-preview。</li>
+            <li><strong>开始对话</strong>：输入问题，享受智能中文交流，支持翻译、写作、办公自动化等功能。</li>
+        </ol>
 
-        <section id="case-studies">
-            <h2>ChatGPT 中文版的实际应用</h2>
-            <p>ChatGPT 可广泛应用于以下场景：</p>
-            <ul>
-                <li>撰写营销文案、社交媒体内容或新闻稿。</li>
-                <li>辅助学习：生成学习笔记、解答问题。</li>
-                <li>技术开发：代码生成与调试。</li>
-                <li>创意设计：AI 绘图或创意构思。</li>
-            </ul>
-        </section>
+        <h2 id="faq">五、常见问题解答（FAQ）</h2>
+        <ul>
+            <li><strong>ChatGPT 中文版和官网有什么区别？</strong><br>
+                中文版针对国内用户进行了优化，通过镜像站点提供更快、更稳定的访问，而官网需要翻墙才能访问。
+            </li>
+            <li><strong>中文版支持GPT-4吗？</strong><br>
+                是的，大多数镜像站支持GPT-4，并且部分站点还提供更高级的模型选项。
+            </li>
+            <li><strong>ChatGPT 中文版是免费的吗？</strong><br>
+                部分镜像站提供免费试用额度，但某些高级功能可能需要支付费用。
+            </li>
+            <li><strong>镜像网站是否安全？</strong><br>
+                推荐站点经过基本的安全检测，但建议用户避免输入敏感信息以保障隐私安全。
+            </li>
+        </ul>
 
-        <section id="faq">
-            <h2>常见问题 (FAQ)</h2>
-            <h3>1. ChatGPT 中文版免费吗？</h3>
-            <p>部分镜像站提供免费试用额度，例如 GPT 猫提供 10 次免费对话。</p>
+        <h2 id="privacy">六、联系我们与更新信息</h2>
+        <p>我们的项目将定期更新最新的镜像站点和使用指南。欢迎通过以下方式联系我们：</p>
+        <ul>
+            <li><strong>提交问题</strong>：通过 <a href="https://github.com/lory-b/ChatGPT/issues" target="_blank">GitHub Issues</a> 提出问题或反馈。</li>
+            <li><strong>贡献资源</strong>：如果发现其他优质站点，欢迎通过 <a href="https://github.com/lory-b/ChatGPT/pulls" target="_blank">Pull Request</a> 提交。</li>
+        </ul>
 
-            <h3>2. 镜像站是否安全？</h3>
-            <p>推荐选择 HTTPS 加密站点，并避免输入敏感信息。</p>
+        <p><strong>支持我们</strong>：如果本项目对您有帮助，请为我们点亮 <a href="https://github.com/lory-b/ChatGPT" target="_blank">Star</a>，让更多人受益于此资源！</p>
+    </section>
 
-            <h3>3. ChatGPT 中文版适合哪些用户？</h3>
-            <p>适合学生、办公人士、创作者和开发者，满足多种使用场景。</p>
-        </section>
-    </main>
+    <!-- JavaScript -->
+    <script>
+        const colors = [
+            ['#ff0080', '#7928ca'], 
+            ['#ff4d4d', '#f9cb28'], 
+            ['#7928ca', '#4c88e8'], 
+            ['#4c88e8', '#4FE2B1'], 
+            ['#ff0080', '#ff7f00']
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--primary-color', color1);
+        document.documentElement.style.setProperty('--secondary-color', color2);
 
-    <footer>
-        <p>&copy; 2025 ChatGPT 中文版指南 | 本页面持续更新，欢迎收藏！</p>
-    </footer>
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
